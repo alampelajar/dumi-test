@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rina Pratama — Frontend Developer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0d1117;
+      color: #e6edf3;
+      line-height: 1.6;
+      padding: 0 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 0 40px;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      color: #58a6ff;
+      margin-bottom: 5px;
+    }
+
+    header h2 {
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: #8b949e;
+    }
+
+    section {
+      padding: 40px 0;
+    }
+
+    h3 {
+      font-size: 1.8rem;
+      color: #58a6ff;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #21262d;
+      padding-bottom: 10px;
+    }
+
+    /* About */
+    .about p {
+      margin-bottom: 12px;
+      color: #c9d1d9;
+    }
+
+    .about .highlight {
+      color: #58a6ff;
+      font-weight: 600;
+    }
+
+    /* Projects */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .project-card {
+      background-color: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      padding: 20px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(88, 166, 255, 0.15);
+    }
+
+    .project-card h4 {
+      color: #58a6ff;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    .project-card p {
+      color: #8b949e;
+      font-size: 0.95rem;
+    }
+
+    /* Contact */
+    .contact {
+      text-align: center;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin: 8px 15px;
+      padding: 12px 28px;
+      background-color: #58a6ff;
+      color: #0d1117;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background-color 0.2s ease;
+    }
+
+    .contact a:hover {
+      background-color: #79b8ff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 0;
+      color: #8b949e;
+      font-size: 0.9rem;
+      border-top: 1px solid #21262d;
+      margin-top: 40px;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      header h2 {
+        font-size: 1.1rem;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+      }
+
+      .projects {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Rina Pratama</h1>
+      <h2>Frontend Developer</h2>
+    </header>
+
+    <section class="about">
+      <h3>Tentang Saya</h3>
+      <p>Saya seorang <span class="highlight">Frontend Developer</span> yang berdedikasi dalam menciptakan pengalaman web yang <span class="highlight">fungsional</span>, <span class="highlight">interaktif</span>, dan <span class="highlight">user-friendly</span>.</p>
+      <p>Dengan keahlian dalam HTML, CSS, JavaScript, dan framework modern seperti React, saya berusaha terus memperbarui skill agar dapat menghadirkan solusi digital yang berkualitas tinggi.</p>
+    </section>
+
+    <section class="projects">
+      <h3>Proyek</h3>
+      <div class="projects">
+        <div class="project-card">
+          <h4>Aplikasi Task Manager</h4>
+          <p>Aplikasi manajemen tugas dengan fitur drag-and-drop, filter, dan penyimpanan lokal menggunakan React.</p>
+        </div>
+        <div class="project-card">
+          <h4>Dashboard Analytics</h4>
+          <p>Dashboard data visualisasi dengan chart interaktif menggunakan Chart.js dan API REST.</p>
+        </div>
+        <div class="project-card">
+          <h4>Portofolio Pribadi</h4>
+          <p>Situs portofolio responsif dengan animasi smooth scroll dan tema gelap.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h3>Kontak</h3>
+      <p>Bergabunglah dengan saya atau hubungi saya untuk kolaborasi!</p>
+      <a href="mailto:rina.pratama@example.com">Email</a>
+      <a href="https://github.com" target="_blank">GitHub</a>
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Rina Pratama. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
